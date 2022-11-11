@@ -1,6 +1,7 @@
 use anyhow::anyhow;
 use scraper::{Html, Selector};
 
+// Entry point
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
     let html = reqwest::get("https://www.rust-lang.org")
